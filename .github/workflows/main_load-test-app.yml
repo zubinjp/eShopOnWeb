@@ -25,13 +25,13 @@ jobs:
         run: dotnet build Everything.sln --configuration Release --no-restore
 
       - name: dotnet publish
-        run: dotnet publish Everything.sln -c Release -o ${{env.DOTNET_ROOT}}/myapp --no-restore
+        run: dotnet publish Everything.sln -c Release -o ${{ github.workspace }}/myapp --no-restore
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
+          path: ${{ github.workspace }}/myapp
 
   deploy:
     runs-on: windows-latest
