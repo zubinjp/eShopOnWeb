@@ -62,4 +62,3 @@ jobs:
           app-name: 'Load-Test-App'
           slot-name: 'Production'
           package: ${{ github.workspace }}/myapp
-
