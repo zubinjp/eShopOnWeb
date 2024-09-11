@@ -2,15 +2,11 @@
 
   <PropertyGroup>    
     <Nullable>enable</Nullable>
-
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="appsettings.test.json" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <!-- Ensure the configuration for appsettings.test.json is correct -->
     <Content Include="appsettings.test.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
@@ -19,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <!-- Standard package references for test projects -->
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" />
     <PackageReference Include="MSTest.TestAdapter" />
@@ -30,6 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <!-- Ensure project references are correct and do not cause conflicts -->
     <ProjectReference Include="..\..\src\PublicApi\PublicApi.csproj" />
     <ProjectReference Include="..\..\src\Web\Web.csproj" />
   </ItemGroup>
