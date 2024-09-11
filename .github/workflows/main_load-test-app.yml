@@ -19,13 +19,13 @@ jobs:
           dotnet-version: '6.0.x'
 
       - name: Restore NuGet packages
-        run: dotnet restore Everything.sln
+        run: dotnet restore eShopOnWeb.sln
 
       - name: Build with dotnet
-        run: dotnet build Everything.sln --configuration Release --no-restore
+        run: dotnet build eShopOnWeb.sln --configuration Release --no-restore
 
       - name: dotnet publish
-        run: dotnet publish Everything.sln -c Release -o ${{ github.workspace }}/myapp --no-restore
+        run: dotnet publish eShopOnWeb.sln -c Release -o ${{ github.workspace }}/myapp --no-restore
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -40,7 +40,7 @@ jobs:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
-      id-token: write #This is required for requesting the JWT
+      id-token: write # This is required for requesting the JWT
 
     steps:
       - name: Download artifact from build job
