@@ -3,6 +3,7 @@
   <PropertyGroup>    
     <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
+    <OutputPath>bin\$(Configuration)\TestProject\</OutputPath> <!-- Explicit output path -->
   </PropertyGroup>
 
   <ItemGroup>
