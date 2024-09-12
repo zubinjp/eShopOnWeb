@@ -6,6 +6,8 @@
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..</DockerfileContext>
     <Nullable>enable</Nullable>
+    <!-- Explicit output path -->
+    <OutputPath>$(SolutionDir)bin\$(Configuration)\Microsoft.eShopWeb.PublicApi\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
