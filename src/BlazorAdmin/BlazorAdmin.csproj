@@ -1,5 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
+  <PropertyGroup>
+    <!-- Explicit output path -->
+    <OutputPath>$(SolutionDir)bin\$(Configuration)\BlazorWebAssembly\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Blazored.LocalStorage" />
     <PackageReference Include="BlazorInputFile" />
