@@ -1,6 +1,7 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>  
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework> <!-- Adjust to your target framework -->
     <RootNamespace>BlazorShared</RootNamespace>
     <AssemblyName>BlazorShared</AssemblyName>
   </PropertyGroup>
