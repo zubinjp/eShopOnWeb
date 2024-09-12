@@ -4,6 +4,8 @@
     <TargetFramework>net8.0</TargetFramework> <!-- Adjust to your target framework -->
     <RootNamespace>BlazorShared</RootNamespace>
     <AssemblyName>BlazorShared</AssemblyName>
+    <!-- Explicit output path -->
+    <OutputPath>$(SolutionDir)bin\$(Configuration)\BlazorShared\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
