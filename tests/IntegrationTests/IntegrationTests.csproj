@@ -3,6 +3,7 @@
   <PropertyGroup>  
     <RootNamespace>Microsoft.eShopWeb.IntegrationTests</RootNamespace>
     <IsPackable>false</IsPackable>
+    <OutputPath>bin\$(Configuration)\IntegrationTests\</OutputPath> <!-- Explicit output path -->
   </PropertyGroup>
 
   <ItemGroup>
