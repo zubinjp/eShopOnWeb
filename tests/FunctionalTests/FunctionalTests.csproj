@@ -5,6 +5,7 @@
     <IsPackable>false</IsPackable>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <OutputPath>bin\$(Configuration)\FunctionalTests\</OutputPath> <!-- Explicit output path -->
   </PropertyGroup>
 
   <ItemGroup>
