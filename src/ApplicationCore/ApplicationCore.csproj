@@ -1,20 +1,21 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
-	<PropertyGroup>	
-		<RootNamespace>Microsoft.eShopWeb.ApplicationCore</RootNamespace>
-		<Nullable>enable</Nullable>
-	</PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework> <!-- Adjust to your target framework -->
+    <RootNamespace>Microsoft.eShopWeb.ApplicationCore</RootNamespace>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
 
-	<ItemGroup>
-		<PackageReference Include="Ardalis.GuardClauses" />
-		<PackageReference Include="Ardalis.Result" />
-		<PackageReference Include="Ardalis.Specification" />		
-		<PackageReference Include="System.Security.Claims" />
-		<PackageReference Include="System.Text.Json" />
-	</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Ardalis.GuardClauses" />
+    <PackageReference Include="Ardalis.Result" />
+    <PackageReference Include="Ardalis.Specification" />
+    <PackageReference Include="System.Security.Claims" />
+    <PackageReference Include="System.Text.Json" />
+  </ItemGroup>
 
-	<ItemGroup>
-	  <ProjectReference Include="..\BlazorShared\BlazorShared.csproj" />
-	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlazorShared\BlazorShared.csproj" />
+  </ItemGroup>
 
 </Project>
