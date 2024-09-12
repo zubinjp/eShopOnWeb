@@ -4,6 +4,7 @@
     <TargetFramework>net8.0</TargetFramework> <!-- Adjust to your target framework -->
     <RootNamespace>Microsoft.eShopWeb.ApplicationCore</RootNamespace>
     <Nullable>enable</Nullable>
+    <OutputPath>bin\$(Configuration)\ApplicationCore\</OutputPath> <!-- Explicit output path -->
   </PropertyGroup>
 
   <ItemGroup>
