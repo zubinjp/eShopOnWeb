@@ -7,7 +7,7 @@
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <!-- Explicit output path -->
-    <OutputPath>$(SolutionDir)bin\$(Configuration)\Microsoft.eShopWeb.UnitTests\</OutputPath>
+    <OutputPath>$(SolutionDir)bin\$(Configuration)\Microsoft.eShopWeb.Web\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
