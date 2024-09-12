@@ -4,6 +4,8 @@
     <TargetFramework>net8.0</TargetFramework> <!-- Adjust to your target framework -->
     <RootNamespace>Microsoft.eShopWeb.Infrastructure</RootNamespace>
     <Nullable>enable</Nullable>
+    <!-- Explicit output path -->
+    <OutputPath>$(SolutionDir)bin\$(Configuration)\Microsoft.eShopWeb.Infrastructure\</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
